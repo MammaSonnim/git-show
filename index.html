@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Shower Presentation Engine</title>
+	<title>Введение в Git</title>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,9 +9,10 @@
 </head>
 <body class="shower list">
 	<header class="caption">
-		<h1>Shower Presentation Engine</h1>
-		<p>Yours Truly, Famous Inc.</p>
+		<h1>Introduction in Git</h1>
+		<p>by Yana Kriklivaya</p>
 	</header>
+	<!-- 1 -->
 	<section class="slide" id="cover">
 		<h2>Введение в GIT</h2>
 		<p><a href="https://github.com/MammaSonnim">Яна Крикливая</a></p>
@@ -39,16 +40,19 @@
 					}
 		</style>
 	</section>
-	<section class="slide">
-		<h2>Что такое Git?</h2>
-		<p><strong>Git</strong> — распределённая система контроля версий <i>(СКВ)</i>. Проект был создан Линусом Торвальдсом для управления разработкой ядра Linux, первая версия выпущена 7 апреля 2005 года. На сегодняшний день его поддерживает Джунио Хамано.</p>
-		<p><a href="https://ru.wikipedia.org/wiki/Git">Wikipedia</a></p>
-	</section>
+	<!-- 2 -->
 	<section class="slide">
 		<h2>Что такое система контроля версий?</h2>
 		<p><strong>СКВ</strong> — ПО для облегчения работы с изменяющейся информацией. СКВ позволяет хранить несколько версий одного и того же документа, при необходимости возвращаться к более ранним версиям, определять, кто и когда сделал то или иное изменение, и многое другое.</p>
 		<p><a href="https://ru.wikipedia.org/wiki/Система_управления_версиями">Wikipedia</a></p>
 	</section>
+	<!-- 3 -->
+	<section class="slide">
+		<h2>Что такое Git?</h2>
+		<p><strong>Git</strong> — распределённая система контроля версий <i>(СКВ)</i>. Проект был создан Линусом Торвальдсом для управления разработкой ядра Linux, первая версия выпущена 7 апреля 2005 года. На сегодняшний день его поддерживает Джунио Хамано.</p>
+		<p><a href="https://ru.wikipedia.org/wiki/Git">Wikipedia</a></p>
+	</section>
+	<!-- 4 -->
 	<section class="slide">
 		<h2>Особенности Git</h2>
 		<ol>
@@ -65,41 +69,47 @@
 			</li>
 		</ol>
 	</section>
-	<section class="slide">
-		<h2>Что нужно для работы:</h2>
-		<ol>
-			<li>Git на локальной машине</li>
-			<li class="next">ПО - git-клиент или консоль (Source Tree, cmder, gitbash, etc)</li>
-			<li class="next">Git-сервер/Git-хостинг (например, GitHub)</li>
-		</ol>
-	</section>
+	<!-- 5 -->
 	<section class="slide" id="picture">
 		<h2 style="color: #585A5E;">Стандартный рабочий процесс</h2>
 		<img src="pictures/areas.png" height="640" width="1024" alt="" class="cover">
 	</section>
-	<section class="slide" id="picture">
+	<!-- 6 -->
+	<section class="slide">
+		<h2>Что нужно для работы:</h2>
+		<ol>
+			<li><a href="https://git-scm.com/downloads">Git</a> на локальной машине</li>
+			<li class="next">ПО — <a href="https://git-scm.com/downloads/guis">git-клиент</a> и/или терминал (Source Tree, SmartGit, gitk, cmder, gitbash, ConEmy, etc)</li>
+			<li class="next">Git-сервер/Git-хостинг (<a href="https://github.com">GitHub</a>, <a href="https://bitbucket.org">BitBucket</a>, <a href="http://www.cloudforge.com">CloudForge</a>, etc)</li>
+		</ol>
+	</section>
+	<!-- 7 -->
+	<section class="slide" id="picture2">
 		<h2>Основные команды</h2>
 		<img src="pictures/console.jpg" height="640" width="1024" alt="" class="cover">
 		<style>
-			#picture h2 {
+			#picture2 h2 {
 				color:#FFF;
 				}
 		</style>
 	</section>
+	<!-- 8 -->
 	<section class="slide">
 		<h2>Git init</h2>
 		<p><code>git init</code> — версионный контроль в существующей директории</p>
-		<p><code>git init <i>&lt;dir&gt;</i></code> — создаем новую директорию</p>
-		<p><code>git init --bare <i>&lt;dir&gt;</i></code> — создаем репозиторий без рабочей директории</p>
+		<p><code>git init <i>&lt;dir&gt;</i></code> — создает новую директорию</p>
+		<p><code>git init --bare <i>&lt;dir&gt;</i></code> — создает репозиторий без рабочей директории</p>
 	</section>
+	<!-- 9 -->
 	<section class="slide">
 		<h2>Git clone</h2>
-		<p><code>git clone <i>&lt;repo&gt;</i></code> — копируем git-репозиторий</p>
-		<p><code>git clone <i>&lt;repo dir&gt;</i></code> — копируем в директорию</p>
+		<p><code>git clone <i>&lt;repo&gt;</i></code> — копирует git-репозиторий</p>
+		<p><code>git clone <i>&lt;repo dir&gt;</i></code> — копирует в директорию</p>
 		<br>
 		<p class="note">пример:</p>
 		<p  style="font-size:0.7em"><code>git clone https://github.com/MammaSonnim/git-show.git gitshow</code></p>
 	</section>
+	<!-- 10 -->
 	<section class="slide">
 		<h2>Git config</h2>
 		<p><code>--system</code> / <code>--global</code> / без ключа</p>
@@ -122,52 +132,80 @@
 		<p><code>git log</code> — просмотр истории по коммитам</p>
 	</section>
 	<section class="slide">
-		<h2>Синхронизация</h2>
-		<p><code>git remote</code> — </p>
-		<p><code>git fetch</code> — </p>
-		<p><code>git pull</code> — </p>
-		<p><code>git push</code> — </p>
+		<h2>Основы ветвления</h2>
+		<img src="pictures/branch-1.png" width="700" height="203" alt="" class="place" style="margin-top: 30px;">
 	</section>
 	<section class="slide">
-		<h2>Основы ветвления</h2>
-		<p><code>git branch</code> — </p>
-		<p><code>git checkout</code> — </p>
-		<p><code>git merge</code> — </p>
+		<h2>Основные команды для работы с ветками</h2>
+		<p><code>git branch <i>&lt;name&gt;</i></code> — создать новую ветку</p>
+		<p><code>git checkout <i>&lt;name&gt;</i></code> — переключиться на ветку</p>
+		<p><code>git merge <i>&lt;name-2&gt;</i></code> — слияние: слить в текущую ветку ветку-2</p>
+		<p><code>git branch -d <i>&lt;name&gt;</i></code> — удалить ветку</p>
+	</section>
+	<section class="slide">
+		<h2>Создание новой ветки</h2>
+		<img src="pictures/branch-2.png"  width="700" height="408" alt="" class="place" style="margin-top: 50px;">
+	</section>
+	<section class="slide">
+		<h2>Слияние-перемотка (fast-forward)</h2>
+		<img src="pictures/branch-3.png" width="825" height="345" alt="" class="place" style="margin-top: 50px;">
+	</section>
+	<section class="slide">
+		<h2>Коммит-слияние</h2>
+		<img src="pictures/branch-4.png" width="800" height="446" alt="" class="place" style="margin-top: 50px;">
 	</section>
 	<section class="slide">
 		<h2>Конфликты</h2>
+		<img src="pictures/conflict.png" width="800"  alt="" class="place" style="margin-top: 70px;">
+	</section>
+	<section class="slide">
+		<h2>Синхронизация</h2>
+		<p><code>git remote add <i>[name] [url]</i></code> — добавление удалённого репозитория под именем-сокращением</p>
+		<p><code>git fetch</code> — забрать данные с удалённого репозитория</p>
+		<p><code>git pull</code> — fetch + merge </p>
+		<p><code>git push <i>[remote_server] [branch]</i></code> — отправление наработок на удалённый сервер</p>
 	</section>
 	<section class="slide">
 		<h2>Github и gh-pages</h2>
+		<img src="pictures/github.jpg" width="600" height="400" alt="" class="place" style="margin-top: 50px;">
 	</section>
-	<section class="slide">
-		<h2>Полезные ссылки (рус)</h2>
+	<section class="slide" id="source">
+		<h2>Полезные ссылки (рус.)</h2>
 		<ul>
-			<li><a href=""></a></li>
-			<li><a href=""></a></li>
-			<li><a href=""></a></li>
-			<li><a href=""></a></li>
-			<li><a href=""></a></li>
-			<li><a href=""></a></li>
-			<li><a href=""></a></li>
+			<li><a href="https://www.youtube.com/watch?t=686&v=Oyj5yVVrT4Q">скринкаст «Основы работы с Git»</a> <i>(Сергей Попов)</i></li>
+			<li><a href="https://git-scm.com/book/ru/v1">учебник "Pro Git" <i>(версия 1)</i>,</a> <a href="https://git-scm.com/book/ru/v2/"><i>(версия 2)</i></a></li>
+			<li><a href="https://try.github.io/levels/1/challenges/1">интерактивный курс "tryGit"</a> <i>(15-минутный)</i></li>
+			<li><a href="http://pcottle.github.io/learnGitBranching/">обучающая игра "Learn Git Branching"</a> <i>(поможет разобраться с ветками)</i></li>
+			<li><a href="http://githowto.com/ru">интерактивный тур "Git How To"</a></li>
+			<li><a href="http://rogerdudler.github.io/git-guide/index.ru.html">"git — the simple guide"</a></li>
+			<li><a href="http://habrahabr.ru/company/mailru/blog/267595/ ">статья «19 советов по повседневной работе с Git»</a></li>
+			<li><a href="http://habrahabr.ru/post/106912/">статья «Удачная модель ветвления для Git»</a></li>
+			<li><a href="http://habrahabr.ru/post/202696/">статья «Cпособы исключения файлов в Git»</a> (помимо .gitignore)</li>
+			<li><a href="http://habrahabr.ru/post/174467/">статья «Ежедневная работа с Git»</a></li>
 		</ul>
+		<style>
+			#source li {
+				font-size: 0.7em;
+				}
+		</style>
 	</section>
-	<section class="slide">
-		<h2>Полезные ссылки (англ)</h2>
+	<section class="slide" id="source2">
+		<h2>Полезные ссылки (англ.)</h2>
 		<ul>
-			<li><a href=""></a></li>
-			<li><a href=""></a></li>
-			<li><a href=""></a></li>
-			<li><a href=""></a></li>
-			<li><a href=""></a></li>
-			<li><a href=""></a></li>
-			<li><a href=""></a></li>
+			<li><a href="http://www.alexkras.com/getting-started-with-git/">Git Cheat Sheet</a> <i>(шпаргалка по командам)</i></li>
+			<li><a href="http://www.git-tower.com/blog/git-cheat-sheet/">Git Cheat Sheet</a> <i>(еще одна шпаргалка по командам)</i></li>
+			<li><a href="https://www.atlassian.com/git/">tutorials by Atlassian</a></li>
+			<li><a href="https://vimeo.com/14629850">"Getting Git" by Scott Chacon</a> <i>(видеокурс от создателя git-scm.com)</i></li>
+			<li><a href="https://help.github.com">GitHub tutorial</a></li>
+			<li><a href="https://pages.github.com">GitHub Pages</a> <i>(инструкции по хостингу проектов на GitHub)</i></li>
+			<li><a href="https://github.com/git/git/blob/master/Documentation/SubmittingPatches">Submitting Patches</a> <i>(руководство по созданию коммитов)</i></li>
+			<li><a href="https://git.wiki.kernel.org/index.php/Main_Page">Git-wiki</a></li>
 		</ul>
-	</section>
-	<section class="slide">
-		<h2>template</h2>
-		<p><code>git</code> — </p>
-		<p><code>git</code> — </p>
+		<style>
+			#source2 li {
+				font-size: 0.7em;
+				}
+		</style>
 	</section>
 	<section class="slide">
 		<h2>Напоследок</h2>
@@ -177,18 +215,6 @@
 			</blockquote>
 			<figcaption>Jack William Bell</figcaption>
 		</figure>
-	</section>
-	<section class="slide">
-		<h2>Code samples</h2>
-		<pre>
-			<code>&lt;!DOCTYPE html&gt;</code>
-			<code class="mark">&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <mark class="comment">&lt;!--Comment--&gt;</mark></code>
-			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
-		</pre>
 	</section>
 	<p class="badge">
 		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
