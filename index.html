@@ -44,13 +44,11 @@
 	<section class="slide">
 		<h2>Что такое система контроля версий?</h2>
 		<p><strong>СКВ</strong> — ПО для облегчения работы с изменяющейся информацией. СКВ позволяет хранить несколько версий одного и того же документа, при необходимости возвращаться к более ранним версиям, определять, кто и когда сделал то или иное изменение, и многое другое.</p>
-		<p><a href="https://ru.wikipedia.org/wiki/Система_управления_версиями">Wikipedia</a></p>
 	</section>
 	<!-- 3 -->
 	<section class="slide">
 		<h2>Что такое Git?</h2>
 		<p><strong>Git</strong> — распределённая система контроля версий <i>(СКВ)</i>. Проект был создан Линусом Торвальдсом для управления разработкой ядра Linux, первая версия выпущена 7 апреля 2005 года. На сегодняшний день его поддерживает Джунио Хамано.</p>
-		<p><a href="https://ru.wikipedia.org/wiki/Git">Wikipedia</a></p>
 	</section>
 	<!-- 4 -->
 	<section class="slide">
@@ -60,19 +58,18 @@
 			<li class="next">Почти все операции локальные</li>
 			<li class="next">Git следит за целостностью файлов</li>
 			<li class="next">Сложно что-то поломать</li>
-			<li class="next">3 состояния файлов:
-				<ul style="font-size: 0.7em;">
-					<li>зафиксированные (commited)</li>
-					<li>измененные (modified)</li>
-					<li>подготовленные (staged)</li>
-				</ul>
-			</li>
+			<li class="next">Разные состояния файлов</li>
 		</ol>
 	</section>
 	<!-- 5 -->
-	<section class="slide" id="picture">
+	<section class="slide">
 		<h2 style="color: #585A5E;">Стандартный рабочий процесс</h2>
-		<img src="pictures/areas.png" height="640" width="1024" alt="" class="cover">
+		<ol>
+			<li>Изменение файлов в рабочем каталоге (working directory)</li>
+			<li class="next">Добавление слепков в область подготовленных файлов (staging area)</li>
+			<li class="next">Фиксация изменений в git-репозитории</li>
+		</ol>
+		<img src="pictures/workflow.png" width="900" height="224" alt="Git-workflow" class="place" style="margin-top: 150px;">
 	</section>
 	<!-- 6 -->
 	<section class="slide">
@@ -120,10 +117,6 @@
 		<p style="font-size:0.7em"><code>git config --system core.editor <i>&lt;editor&gt;</i></code></p>
 	</section>
 	<section class="slide">
-		<h2>Жизненный цикл состояний файлов</h2>
-		<img src="pictures/lifecycle.png" height="340" width="824" alt="" class="place" style="margin-top: 50px;">
-	</section>
-	<section class="slide">
 		<h2>Запись и просмотр изменений</h2>
 		<p><code>git add <i>&lt;file&gt;/&lt;dir&gt;</i></code> — добавление файлов в индекс</p>
 		<p><code>git commit</code> — фиксация изменений</p>
@@ -133,7 +126,10 @@
 	</section>
 	<section class="slide">
 		<h2>Основы ветвления</h2>
-		<img src="pictures/branch-1.png" width="700" height="203" alt="" class="place" style="margin-top: 30px;">
+		<p><strong>Ветвление</strong> — отклонение от основной линии разработки</p>
+		<p><strong>Ветка</strong> — ссылка на определенный коммит</p>
+		<p><strong>HEAD</strong> — указатель на текущую ветку</p>
+		<img src="pictures/branch-1.png" width="600" height="254" alt="" class="place" style="margin-top: 70px;">
 	</section>
 	<section class="slide">
 		<h2>Основные команды для работы с ветками</h2>
@@ -144,11 +140,23 @@
 	</section>
 	<section class="slide">
 		<h2>Создание новой ветки</h2>
-		<img src="pictures/branch-2.png"  width="700" height="408" alt="" class="place" style="margin-top: 50px;">
+		<p><code>git branch <i>testing</i></code><br> — создать ветку под именем testing</p>
+		<img src="pictures/branch-2.png"  width="600" height="350" alt="" class="place" style="margin-top: 50px;">
+	</section>
+	<section class="slide">
+		<h2>Переключение на ветку</h2>
+		<p><code>git checkout <i>testing</i></code><br> — переключиться на ветку testing</p>
+		<img src="pictures/branch-checkout.png"  width="600" height="343" alt="" class="place" style="margin-top: 60px;">
+	</section>
+	<section class="slide">
+		<h2>Разработка в новой ветке</h2>
+		<p><code>git add <i>&lt;files&gt;</i></code></p>
+		<p><code>git commit -m <i>'start test'</i></code></p>
+		<img src="pictures/branch-3.png" width="700" height="293" alt="" class="place" style="margin-top: 90px;">
 	</section>
 	<section class="slide">
 		<h2>Слияние-перемотка (fast-forward)</h2>
-		<img src="pictures/branch-3.png" width="825" height="345" alt="" class="place" style="margin-top: 50px;">
+		<img src="pictures/fast-forward.gif" width="800" height="460" alt="" class="place" style="margin-top: 70px;">
 	</section>
 	<section class="slide">
 		<h2>Коммит-слияние</h2>
