@@ -117,9 +117,16 @@
 		<p style="font-size:0.7em"><code>git config --system core.editor <i>&lt;editor&gt;</i></code></p>
 	</section>
 	<section class="slide">
-		<h2>Запись и просмотр изменений</h2>
+		<h2>Запись зменений</h2>
 		<p><code>git add <i>&lt;file&gt;/&lt;dir&gt;</i></code> — добавление файлов в индекс</p>
 		<p><code>git commit</code> — фиксация изменений</p>
+		<br>
+		<p class="note">пример SHA-1 хеша: 24b9da6552252987aa493b52f8696cd6d3b00373</p>
+		<p style="font-size:0.7em"><code>git commit -m <i>'commit-descr'</i></code> — коммит с описанием сразу</p>
+		<p style="font-size:0.7em"><code>git commit -am <i>'commit-descr'</i></code> — git add + git commit -m</p>
+	</section>
+	<section class="slide">
+		<h2>Просмотр изменений</h2>
 		<p><code>git status</code> — определение состояния файлов</p>
 		<p><code>git diff</code> / + <code> --cached</code> — просмотр изменений до индекса / коммита</p>
 		<p><code>git log</code> — просмотр истории по коммитам</p>
@@ -150,8 +157,7 @@
 	</section>
 	<section class="slide">
 		<h2>Разработка в новой ветке</h2>
-		<p><code>git add <i>&lt;files&gt;</i></code></p>
-		<p><code>git commit -m <i>'start test'</i></code></p>
+		<p><code>git commit -am <i>'start test'</i></code><br> — коммит 87ab2 (сокращенный SHA-1)</p>
 		<img src="pictures/branch-3.png" width="700" height="293" alt="" class="place" style="margin-top: 90px;">
 	</section>
 	<section class="slide">
@@ -160,7 +166,7 @@
 	</section>
 	<section class="slide">
 		<h2>Коммит-слияние</h2>
-		<img src="pictures/branch-4.png" width="800" height="446" alt="" class="place" style="margin-top: 50px;">
+		<img src="pictures/merge-commit.gif" width="800" height="366" alt="" class="place" style="margin-top: 70px;">
 	</section>
 	<section class="slide">
 		<h2>Конфликты</h2>
