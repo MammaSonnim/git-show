@@ -54,12 +54,16 @@
 	<section class="slide">
 		<h2>Особенности Git</h2>
 		<ol>
-			<li>Хранимые данные — набор слепков</li>
+			<li class="next">Хранимые данные — набор слепков</li>
 			<li class="next">Почти все операции локальные</li>
 			<li class="next">Git следит за целостностью файлов</li>
 			<li class="next">Сложно что-то поломать</li>
-			<li class="next">Разные состояния файлов</li>
 		</ol>
+		<figure>
+			<blockquote>
+				<p>«It is easy to shoot your foot off with git, but also easy to revert to a previous foot and merge it with your current leg.»</p>
+			</blockquote>
+		</figure>
 	</section>
 	<!-- 5 -->
 	<section class="slide">
@@ -117,7 +121,7 @@
 		<p style="font-size:0.7em"><code>git config --system core.editor <i>&lt;editor&gt;</i></code></p>
 	</section>
 	<section class="slide">
-		<h2>Запись зменений</h2>
+		<h2>Запись изменений</h2>
 		<p><code>git add <i>&lt;file&gt;/&lt;dir&gt;</i></code> — добавление файлов в индекс</p>
 		<p><code>git commit</code> — фиксация изменений</p>
 		<br>
@@ -128,7 +132,7 @@
 	<section class="slide">
 		<h2>Просмотр изменений</h2>
 		<p><code>git status</code> — определение состояния файлов</p>
-		<p><code>git diff</code> / + <code> --cached</code> — просмотр изменений до индекса / коммита</p>
+		<p><code>git diff</code> / + <code> --staged</code> — просмотр изменений до индекса / коммита</p>
 		<p><code>git log</code> — просмотр истории по коммитам</p>
 	</section>
 	<section class="slide">
@@ -166,18 +170,18 @@
 	</section>
 	<section class="slide">
 		<h2>Коммит-слияние</h2>
-		<img src="pictures/merge-commit.gif" width="800" height="366" alt="" class="place" style="margin-top: 70px;">
+		<img src="pictures/merge-commit.gif" width="800" height="366" alt="" class="place" style="margin-top: 50px;">
 	</section>
 	<section class="slide">
 		<h2>Конфликты</h2>
-		<img src="pictures/conflict.png" width="800"  alt="" class="place" style="margin-top: 70px;">
+		<img src="pictures/conflict.gif" width="600"  height="381" alt="" class="place" style="margin-top: 70px;">
 	</section>
 	<section class="slide">
-		<h2>Синхронизация</h2>
-		<p><code>git remote add <i>[name] [url]</i></code> — добавление удалённого репозитория под именем-сокращением</p>
+		<h2>Работа с удаленными репозиториями</h2>
+		<p><code>git remote add <i>&lt;name&gt; &lt;url&gt;</i></code> — добавление удалённого репозитория под именем-сокращением</p>
 		<p><code>git fetch</code> — забрать данные с удалённого репозитория</p>
 		<p><code>git pull</code> — fetch + merge </p>
-		<p><code>git push <i>[remote_server] [branch]</i></code> — отправление наработок на удалённый сервер</p>
+		<p><code>git push <i>&lt;remote_server&gt; &lt;branch&gt;</i></code> — отправление наработок на удалённый сервер</p>
 	</section>
 	<section class="slide">
 		<h2>Github и gh-pages</h2>
@@ -221,15 +225,6 @@
 				font-size: 0.7em;
 				}
 		</style>
-	</section>
-	<section class="slide">
-		<h2>Напоследок</h2>
-		<figure>
-			<blockquote>
-				<p>«It is easy to shoot your foot off with git, but also easy to revert to a previous foot and merge it with your current leg.»</p>
-			</blockquote>
-			<figcaption>Jack William Bell</figcaption>
-		</figure>
 	</section>
 	<p class="badge">
 		<a href="https://github.com/MammaSonnim/git-show">Fork me on GitHub</a>
